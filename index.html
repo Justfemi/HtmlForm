@@ -3,14 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
-    font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+
-    ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+      crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>My Project</title>
+    <title>Payment form</title>
 </head>
 <body>
-    <h1>Project Startup</h1>
-    <script src="script.js"></script>
+    <div class="wrapper">
+        <h2>Zuri Training Payment Form</h2>
+        <form action="">
+          <h4>Account</h4>
+          <div class="input-group">
+            <div class="input-box">
+              <input type="text" placeholder="Full Name" required class="name">
+              <i class="fa fa-user icon"></i>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="username" required class="name">
+              <i class="fa fa-user icon"></i>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <input type="email" placeholder="email" required class="name">
+              <i class="fa fa-envelope"></i>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <h4>Date of birth</h4>
+              <input type="text" placeholder="DD" class="dob">
+              <input type="text" placeholder="MM" class="dob">
+              <input type="text" placeholder="YYYY" class="dob">
+            </div>
+            <div class="input-box">
+              <h4>Gender</h4>
+              <input type="radio" name="gender" checked id="bl" class="radio">
+              <label for="bl">Male</label>
+              <input type="radio" name="gender" checked id="b2" class="radio">
+              <label for="b2">Female</label>
+            </div> 
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <h4>Payment Details</h4>
+              <input type="radio" name="pay" checked id="bc1" class="radio">
+              <label for="bc1">
+                <span>
+                  <i class="fa fa-cc-visa">Credit card</i>
+                </span>
+              </label>
+              <input type="radio" name="pay" checked id="bc2" class="radio">
+              <label for="bc2">
+                <span>
+                  <i class="fa fa-cc-paypal">Paypal </i>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <input type="tel" class="name" placeholder="card number" required>
+              <i class="fa fa-credit-card icon"></i>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <input type="tel" placeholder="card CVV" required>
+              <i class="fa fa-user icon"></i>
+            </div>
+            <div class="input-box">
+              <select>
+                <option>01 Dec</option>
+                <option>02 Dec</option>
+                <option>03  Dec</option>
+              </select>
+              <select>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <button type="submit">Pay Now </button>
+            </div>
+          </div>
+        </form>
+    </div>
 </body>
 </html>
